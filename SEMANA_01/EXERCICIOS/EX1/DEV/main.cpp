@@ -4,8 +4,33 @@
 // 1 -  Faça uma função que recebe uma certa medida e ajusta ela percentualmente 
 // entre dois valores mínimo e máximo e retorna esse valor
 
+float ajustePercentual(int medida, int minimo, int maximo){
+
+	cout << "Dado o intervalo estabelecido, temos os valores:"<<endl;
+	cout << maximo <<endl;
+	cout << minimo <<endl;
+    float intervalo = maximo - minimo;
+    float valor = medida - minimo;
+
+    float resultado = valor/intervalo;
+  return resultado;
+}
+
+
 // 2 - Faça uma função que simule a leitura de um sensor lendo o 
 // valor do teclado ao final a função retorna este valor
+
+
+int lerValor() {
+	int valor;
+	cin >> valor;
+	return valor;
+
+
+}
+
+
+
 
 // 3 - Faça uma função que armazena uma medida inteira qualquer 
 // em um vetor fornecido. Note que como C não possui vetores 
@@ -13,6 +38,9 @@
 // valor máximo do vetor assim como a última posição preenchida
 // Evite também que, por acidente, um valor seja escrito em 
 // uma área de memória fora do vetor
+
+
+
 
 
 
