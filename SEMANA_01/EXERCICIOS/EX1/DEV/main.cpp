@@ -105,27 +105,26 @@ void armazenaVetor(int elemento, int valorMax, int Vetor[]){
 // segunda é esta maior distância.
 
 string dirMaiorDist(int Vetor[]) {
-  
   int dir = Vetor[0]; 
   int esq = Vetor[1]; 
   int frente = Vetor[2]; 
   int tras = Vetor[3]; 
-
   sort(Vetor, Vetor + 4);
   int maiorNum = Vetor[3];
 
   if(maiorNum == dir){
-    return "Direita";
+    return "direita";
   } 
   else if(maiorNum == esq){
-    return "Esquerda";
+    return "esquerda";
   } 
   else if(maiorNum == frente){
-    return "Frente";
+    return "frente";
   } 
   else{
-    return "Tras";
+    return "tras";
   }
+
 }
 
 int maiorDist(int Vetor[]) {
